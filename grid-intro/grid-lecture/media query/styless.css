@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin:40px;
+  }
+  
+  /* Default Styles */
+  
+  header{
+    background-color: lightgrey;
+    padding:20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  main p {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr)
+  }
+  
+  .grid-container > div {
+    padding: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightyellow;
+  }
+  
+  /* FLEXBOX PROFILE SECTION */
+  
+  .flex-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   }
+   
+   .profile-pic {
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+   }
+   
+   .profile-info h2 {
+     margin:0;
+     color: darkblue;
+   }
+   
+   .profile-info p {
+     margin-top: 5px;
+     color: darkgray;
+   }
+  
+  /* MOBILE LANDSCAPE */
+  
+  @media (max-width: 767px) {
+    main p {
+      font-size: 18px;
+      color: blue;
+      background-color: rgb(44, 244, 44);
+    }
+  
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+  }
+  
+  /* TABLET LANDSCAPE */
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    main p {
+      font-size: 20px;
+      color: green;
+      background-color: aqua;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr)
+    }
+  }
+  
+  /* DESKTOP LANDSCAPE */
+  
+  @media (min-width: 1024px) {
+  
+    header{
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+  
+    main p {
+      font-size: 22px;
+      color: purple;
+      background-color: yellow;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(4, 1fr)
+    }
+  }
+
